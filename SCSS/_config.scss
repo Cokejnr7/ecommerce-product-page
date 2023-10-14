@@ -11,10 +11,19 @@ $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
 
 // font weights
-$font-weghts: (
+$font-weights: (
     "regular": 400,
     "bold": 700
 );
 
 // font family
 $font-Kumbh: 'Kumbh Sans', sans-serif;
+
+
+// media queries
+$mobile: 780px;
+
+// functions
+@function weight($weight){
+    @return map-get($map: $font-weights, $key:$weight)
+}

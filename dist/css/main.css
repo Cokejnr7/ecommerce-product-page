@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.nav, .nav .nav__logo-hamburber, .nav .nav__cart-avatar {
+.nav, .nav .nav__logo_hamburber_links, .nav .nav__cart_avatar_container, .nav .nav__cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,47 +21,54 @@
   border-bottom: 1px solid #b6bcc8;
 }
 
-.nav .nav__logo-hamburber {
+.nav .nav__logo_hamburber_links {
   gap: 2rem;
 }
 
-.nav .nav__logo-hamburber .nav-links {
+.nav .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
-.nav .nav__logo-hamburber .nav-links li {
+@media (max-width: 780px) {
+  .nav .nav__links {
+    display: none;
+  }
+}
+
+.nav .nav__links li {
   list-style-type: none;
 }
 
-.nav .nav__logo-hamburber .nav-links li a {
+.nav .nav__links li a {
   text-decoration: none;
   color: #68707d;
 }
 
-.nav .nav__cart-avatar {
+.nav .nav__cart_avatar_container {
   gap: 1.8rem;
 }
 
-.nav .nav__cart-avatar .cart {
+.nav .nav__cart_avatar_container .avatar {
+  max-width: 3rem;
+}
+
+.nav .nav__cart {
   position: relative;
 }
 
-.nav .nav__cart-avatar .cart__size {
+.nav .nav__cart__size {
   position: absolute;
   font-size: .7rem;
   right: -.8rem;
-  top: -.7rem;
+  top: -.68rem;
   background-color: #ff7d1a;
-  padding: .1rem .6rem;
+  padding: .1rem .5rem;
   border-radius: .6rem;
   color: white;
-}
-
-.nav .nav__cart-avatar .avatar {
-  max-width: 3rem;
+  font-weight: 700;
 }
 
 *, *::before, *::after {
