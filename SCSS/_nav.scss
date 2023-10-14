@@ -10,11 +10,52 @@
     padding: 2rem 0;
     border-bottom: 1px solid $Grayish-blue;
 
+
+
+
     // logo and hamburger 
     #{&}__logo_hamburber_links{
         @extend %flex-align-center;
         gap: 2rem;
 
+    }
+
+
+    #{&}__hamburger_logo_container{
+        @extend %flex-align-center;
+        gap: .8rem;
+    }
+
+    #{&}__hamburger{
+        position: relative;
+        width: 1.3rem;
+        height: 1.3rem;
+        // border: 3px solid $Grayish-blue;        
+
+        .middle_bar{
+            position: absolute;
+            width: 100%;
+            background-color: $Black;
+            height: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::before, &::after{
+                content: "";
+                background-color: $Black;
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+            }
+
+            &::before{
+                transform: translateY(-7px);
+            }
+            &::after{
+                transform: translateY(7px);
+            }
+        }
     }
 
     // nav links
