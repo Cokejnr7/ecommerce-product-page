@@ -4,20 +4,61 @@
   margin: 0 auto;
 }
 
-*, **::before, *::after {
+.nav {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #b6bcc8;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__logo-hamburber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.nav .nav__logo-hamburber .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav .nav__logo-hamburber .nav-links li {
+  list-style-type: none;
+}
+
+.nav .nav__cart-avatar .avatar {
+  max-width: 3rem;
+}
+
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
 }
 
 body {
   min-height: 100%;
-  width: 100%;
+  width: 100vw;
   min-width: 375px;
   font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+  background-color: #efefef;
 }

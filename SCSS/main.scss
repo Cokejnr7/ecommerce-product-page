@@ -1,22 +1,26 @@
+// google font import
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// scss files imports
 @import "./config";
 @import "./utility";
 @import "./nav";
 
-
-*,**::before, *::after{
+*,*::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html{
     height: 100%;
 }
 
 body{
     min-height: 100%;
-    width: 100%;
+    width: 100vw;
     min-width: 375px;
     font-family: $font-Kumbh;
+    position: relative;
+    background-color: #efefef;
 }
