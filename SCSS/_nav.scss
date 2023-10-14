@@ -32,6 +32,19 @@
         @extend %flex-align-center;
         gap: 1.8rem;
         
+        .cart{
+            position: relative;
+            &__size{
+                position: absolute;
+                font-size: .7rem;
+                right: -.8rem;
+                top: -.7rem;
+                background-color: $Orange;
+                padding: .1rem .6rem;
+                border-radius: .6rem;
+                color: $White;
+            }
+        }
         .avatar{
             max-width: 3rem;
         }

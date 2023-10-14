@@ -45,6 +45,21 @@
   gap: 1.8rem;
 }
 
+.nav .nav__cart-avatar .cart {
+  position: relative;
+}
+
+.nav .nav__cart-avatar .cart__size {
+  position: absolute;
+  font-size: .7rem;
+  right: -.8rem;
+  top: -.7rem;
+  background-color: #ff7d1a;
+  padding: .1rem .6rem;
+  border-radius: .6rem;
+  color: white;
+}
+
 .nav .nav__cart-avatar .avatar {
   max-width: 3rem;
 }
