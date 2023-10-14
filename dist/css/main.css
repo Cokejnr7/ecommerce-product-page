@@ -1,30 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 .container {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
-.nav {
-  padding: 2rem 0;
+.nav, .nav .nav__logo-hamburber, .nav .nav__cart-avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #b6bcc8;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #b6bcc8;
+}
+
 .nav .nav__logo-hamburber {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 2rem;
 }
 
@@ -37,6 +34,15 @@
 
 .nav .nav__logo-hamburber .nav-links li {
   list-style-type: none;
+}
+
+.nav .nav__logo-hamburber .nav-links li a {
+  text-decoration: none;
+  color: #68707d;
+}
+
+.nav .nav__cart-avatar {
+  gap: 1.8rem;
 }
 
 .nav .nav__cart-avatar .avatar {
@@ -60,5 +66,4 @@ body {
   min-width: 375px;
   font-family: "Kumbh Sans", sans-serif;
   position: relative;
-  background-color: #efefef;
 }

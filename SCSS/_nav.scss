@@ -1,13 +1,16 @@
-.nav{
-    padding: 2rem 0;
+%flex-align-center{
     display: flex;
-    border-bottom: 1px solid $Grayish-blue;
-    justify-content: space-between;
     align-items: center;
+}
+
+.nav{
+    @extend %flex-align-center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid $Grayish-blue;
 
     #{&}__logo-hamburber{
-        display: flex;
-        align-items: center;
+        @extend %flex-align-center;
         gap: 2rem;
 
         .nav-links{
@@ -16,12 +19,19 @@
     
             li{
               list-style-type: none;
+              a{
+                text-decoration: none;
+                color: $Dark-grayish-blue;
+              }
             }
         }
     }
    
 
     #{&}__cart-avatar{
+        @extend %flex-align-center;
+        gap: 1.8rem;
+        
         .avatar{
             max-width: 3rem;
         }
