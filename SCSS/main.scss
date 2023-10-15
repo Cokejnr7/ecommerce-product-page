@@ -62,4 +62,33 @@
     }
 
 
+    .product{
+        width: 100%;
+        padding-left: 1.6rem;
+        padding-top: 1.6rem;
+
+        @include sm{
+            padding-left: .8rem;
+            padding-top: .8rem;
+        }
+
+        &__brand{
+            color: $Orange;
+        }
+
+        &__heading{
+            color: $Very-dark-blue;
+            display: block;
+            max-width: 20rem;
+            font-size: 1.8rem;
+            font-weight: weight(bold);
+        }
+
+        &__description{
+            color: $Dark-grayish-blue;
+            max-width: 30rem;
+        }
+    }
+
+
 }

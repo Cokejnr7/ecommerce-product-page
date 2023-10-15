@@ -1,6 +1,12 @@
 
 @mixin md{
     @media (min-width: $md){
-        @content 
+        @content ;
+    }
+}
+
+@mixin sm{
+    @media (max-width: $sm){
+        @content ;
     }
 }

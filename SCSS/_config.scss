@@ -22,7 +22,9 @@ $font-Kumbh: 'Kumbh Sans', sans-serif;
 
 
 // media queries
-$md: 800px;
+$sm: 420px;
+$md: 760px;
+
 
 // functions
 @function weight($weight){
