@@ -164,8 +164,8 @@ body {
 
 .main .main__mobile .prev__btn, .main .main__mobile .next__btn {
   background-color: white;
-  width: 3rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 50%;
   position: absolute;
   z-index: 2;
@@ -196,6 +196,15 @@ body {
 
 .main .main__mobile .next__btn {
   right: 2%;
+}
+
+.main .main__mobile .left__icon, .main .main__mobile .right__icon {
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 800px) {
