@@ -7,13 +7,24 @@
 @import "./utility";
 @import "./nav";
 
+%carousel-btn{
+    background-color: $White;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .main{
-    #{&}__product__bg{
+    #{&}__mobile{
         height: 55vh;
         width: 100%;
         position: relative;
-    img{
+
+    &__image{
         position: absolute;
         top: 0;
         left: 0;
@@ -23,9 +34,22 @@
 
     }
 
+    .prev__btn,.next__btn{
+        @extend %carousel-btn;
+    }
+
+    .prev__btn{
+        left: 2%;
+    }
+
+    .next__btn{
+        right: 2%;
+    }
+
     @include md{
         display: none;
     }
+
 
     }
 
