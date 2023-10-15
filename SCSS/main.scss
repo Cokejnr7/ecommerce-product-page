@@ -7,20 +7,27 @@
 @import "./utility";
 @import "./nav";
 
-*,*::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html{
-    height: 100%;
-}
+.main{
+    #{&}__product__bg{
+        height: 55vh;
+        width: 100%;
+        position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
-body{
-    min-height: 100%;
-    width: 100vw;
-    min-width: 375px;
-    font-family: $font-Kumbh;
-    position: relative;
+    }
+
+    @include md{
+        display: none;
+    }
+
+    }
+
+
 }

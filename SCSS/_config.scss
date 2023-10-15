@@ -1,3 +1,4 @@
+
 // primary colors
 $Orange: hsl(26, 100%, 55%);
 $Pale-orange: hsl(25, 100%, 94%);
@@ -21,9 +22,28 @@ $font-Kumbh: 'Kumbh Sans', sans-serif;
 
 
 // media queries
-$md: 780px;
+$md: 800px;
 
 // functions
 @function weight($weight){
     @return map-get($map: $font-weights, $key:$weight)
+}
+
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    width: 100vw;
+    min-width: 375px;
+    font-family: $font-Kumbh;
+    position: relative;
 }
