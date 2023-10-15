@@ -7,10 +7,13 @@
 .nav{
     @extend %flex-align-center;
     justify-content: space-between;
-    padding: 2rem 0;
-    border-bottom: 1px solid $Grayish-blue;
+    padding: 1.5rem;
+    background-color: $White;
 
-
+    @include md{
+        border-bottom: 1px solid $Grayish-blue;
+    }
+   
 
 
     // logo and hamburger 
@@ -30,7 +33,12 @@
         position: relative;
         width: 1.3rem;
         height: 1.3rem;
-        // border: 3px solid $Grayish-blue;        
+        // border: 3px solid $Grayish-blue;
+    
+        @include md{
+            display: none;
+        }
+
 
         .middle_bar{
             position: absolute;
@@ -62,9 +70,10 @@
     #{&}__links{
         display: flex;
         gap: 1rem;
+        display: none;
        
-        @include mobile{
-            display: none;
+        @include md{
+            display: flex;
         }
 
         li{
@@ -79,11 +88,19 @@
     // cart and avatar
     #{&}__cart_avatar_container{
         @extend %flex-align-center;
-        gap: 1.8rem;
+        gap: 1.2rem;
+
+        @include md{
+            gap: 1.8rem;
+        }
 
         // avatar
         .avatar{
-            max-width: 3rem;
+            max-width: 2rem;
+
+            @include md{
+                max-width: 3rem;
+            }
         }
     }
 

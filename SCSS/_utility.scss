@@ -1,4 +1,8 @@
 .container{
-    max-width: 85%;
-    margin: 0 auto;
+    max-width: 100%;
+
+    @include md{
+        max-width: 85%;
+        margin: 0 auto;
+    }
 }

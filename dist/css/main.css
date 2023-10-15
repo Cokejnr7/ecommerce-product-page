@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 .container {
-  max-width: 85%;
-  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (min-width: 780px) {
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
 }
 
 .nav, .nav .nav__logo_hamburber_links, .nav .nav__hamburger_logo_container, .nav .nav__cart_avatar_container, .nav .nav__cart {
@@ -17,8 +23,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0;
-  border-bottom: 1px solid #b6bcc8;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+@media (min-width: 780px) {
+  .nav {
+    border-bottom: 1px solid #b6bcc8;
+  }
 }
 
 .nav .nav__logo_hamburber_links {
@@ -33,6 +45,12 @@
   position: relative;
   width: 1.3rem;
   height: 1.3rem;
+}
+
+@media (min-width: 780px) {
+  .nav .nav__hamburger {
+    display: none;
+  }
 }
 
 .nav .nav__hamburger .middle_bar {
@@ -69,11 +87,14 @@
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  display: none;
 }
 
-@media (max-width: 780px) {
+@media (min-width: 780px) {
   .nav .nav__links {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -87,11 +108,23 @@
 }
 
 .nav .nav__cart_avatar_container {
-  gap: 1.8rem;
+  gap: 1.2rem;
+}
+
+@media (min-width: 780px) {
+  .nav .nav__cart_avatar_container {
+    gap: 1.8rem;
+  }
 }
 
 .nav .nav__cart_avatar_container .avatar {
-  max-width: 3rem;
+  max-width: 2rem;
+}
+
+@media (min-width: 780px) {
+  .nav .nav__cart_avatar_container .avatar {
+    max-width: 3rem;
+  }
 }
 
 .nav .nav__cart {
