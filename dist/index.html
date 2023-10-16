@@ -80,33 +80,43 @@
       </div>
       <section class="product">
         <div>
-          <h4 class="product__brand">SNEAKER COMPANY</h4>
-          <span class="product__heading">Fall Limited Edition Sneakers</span>
-          <p class="product__description">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they'll withstand anything
-            the weather can offer
-          </p>
+            <h4 class="product__brand">SNEAKER COMPANY</h4>
+            <span class="product__heading">Fall Limited Edition Sneakers</span>
+            <p class="product__description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they'll withstand anything
+              the weather can offer
+            </p>
+        </div>
 
-          <div>
-            <div></div>
+        <!-- price and add to cart  -->
+        <div>
+          <!-- new__price, discount, old__price -->
+          <div class="product__price__discount__container">
+              <span class="product__new__discount__container">
+                <span class="product__new__price">&#x24;125</span>
+                <span class="product__discount">50%</span>
+              </span>
+              <s class="product__old__price">&#x24;250</s>
+          </div>
 
-            <!-- price and add to cart  -->
-            <div>
-              <!-- new__price, discount, old__price -->
-              <div class="product__price__discount__container">
-                <span class="product__new__discount__container">
-                  <span class="product__new__price">&#x24;125</span>
-                  <span class="product__discount">50%</span>
-                </span>
-                <s class="product__old__price">&#x24;250</s>
+          <!-- add to cart and remove from cart buttons -->
+          <div class="cart__btns">
+              <div class="add__subtract">
+                <span id="subtract">-</span>
+                <span>0</span>
+                <span id="add">+</span>
               </div>
 
-              <!-- add to cart and remove from cart buttons -->
-              <div></div>
-            </div>
+              <div>
+                <span class="create__cart">
+                  <img src="./images/icon-cart.svg" alt="cart icon" />
+                  Add to cart
+                </span>
+              </div>
           </div>
         </div>
+
       </section>
     </main>
   </body>
