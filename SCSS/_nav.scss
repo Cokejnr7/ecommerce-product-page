@@ -1,24 +1,19 @@
-%flex-align-center{
-    display: flex;
-    align-items: center;
-}
 
 // navbar 
 .nav{
     @extend %flex-align-center;
     justify-content: space-between;
-    padding: 1.6rem;
+    padding: 1.5rem;
     background-color: $White;
 
     @include md{
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         border-bottom: 1px solid $Grayish-blue;
     }
 
     @include sm{
         padding: .8rem; 
     }
-   
 
 
     // logo and hamburger 

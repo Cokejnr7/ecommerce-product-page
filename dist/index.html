@@ -1,108 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-  <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./css/main.css" type="text/css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <nav class="nav container">
-    <!-- logo and links -->
-    <div class="nav__logo_hamburber_links">
-
-      <div class="nav__hamburger_logo_container">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav container">
+      <!-- logo and links -->
+      <div class="nav__logo_hamburber_links">
+        <div class="nav__hamburger_logo_container">
           <!-- hamburger -->
           <div class="nav__hamburger">
             <span class="middle_bar"></span>
           </div>
 
-        <!-- logo image -->
-        <img src="./images/logo.svg" alt="logo" class="logo">
-      </div>
-     
-      
-      <!-- desktop nav links -->
-      <ul class="nav__links">
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-  </div>
-
-  <div class="nav__cart_avatar_container">
-    <div class="nav__cart">
-      <div class="nav__cart__size">3</div>
-      <img src="./images/icon-cart.svg" alt="cart icon">
-    </div>
-    <img src="./images/image-avatar.png" alt="avatar" class="avatar icon">
-  </div>
-  </nav>
-  
-
-  <main  class="container main">
-    <div class="main__mobile">
-      <span class="prev__btn"><i style="font-size:32px" class="fa left__icon">&#xf104;</i></span>
-      <img src="./images/image-product-1.jpg" alt="product image" class="main__mobile__image">
-      <span class="next__btn"><i style="font-size:32px" class="fa right__icon">&#xf105;</i></span>
-    </div>
-    <section class="product">
-      <div>
-        <h4 class="product__brand">SNEAKER COMPANY</h4>
-        <span class="product__heading">Fall Limited Edition Sneakers</span>
-        <p class="product__description">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole,
-          they'll withstand anything the weather can offer
-        </p>
-
-        <div>
-
-          <div>
-
-          </div>
-
-          <!-- price and add to cart  -->
-          <div>
-
-            <!-- new__price, discount, old__price -->
-            <div>
-              <span>
-                <span class="product__new__price">&#x24;125</span>
-                <span class="product__discount">50%</span>
-              </span>
-              <s class="product__old__price">&#x24;250</s>
-            </div>
-
-            <!-- add to cart and remove from cart buttons -->
-            <div>
-
-            </div>
-
-          </div>
-
+          <!-- logo image -->
+          <img src="./images/logo.svg" alt="logo" class="logo" />
         </div>
 
+        <!-- desktop nav links -->
+        <ul class="nav__links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
-  
-  
-  
- 
-</body>
+
+      <div class="nav__cart_avatar_container">
+        <div class="nav__cart">
+          <div class="nav__cart__size">3</div>
+          <img src="./images/icon-cart.svg" alt="cart icon" />
+        </div>
+        <img src="./images/image-avatar.png" alt="avatar" class="avatar icon" />
+      </div>
+    </nav>
+
+    <main class="container main">
+      <div class="main__mobile">
+        <span class="prev__btn"
+          ><i style="font-size: 32px" class="fa left__icon">&#xf104;</i></span
+        >
+        <img
+          src="./images/image-product-1.jpg"
+          alt="product image"
+          class="main__mobile__image"
+        />
+        <span class="next__btn"
+          ><i style="font-size: 32px" class="fa right__icon">&#xf105;</i></span
+        >
+      </div>
+      <section class="product">
+        <div>
+          <h4 class="product__brand">SNEAKER COMPANY</h4>
+          <span class="product__heading">Fall Limited Edition Sneakers</span>
+          <p class="product__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand anything
+            the weather can offer
+          </p>
+
+          <div>
+            <div></div>
+
+            <!-- price and add to cart  -->
+            <div>
+              <!-- new__price, discount, old__price -->
+              <div class="product__price__discount__container">
+                <span class="product__new__discount__container">
+                  <span class="product__new__price">&#x24;125</span>
+                  <span class="product__discount">50%</span>
+                </span>
+                <s class="product__old__price">&#x24;250</s>
+              </div>
+
+              <!-- add to cart and remove from cart buttons -->
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

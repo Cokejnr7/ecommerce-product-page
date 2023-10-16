@@ -22,7 +22,7 @@ $font-Kumbh: 'Kumbh Sans', sans-serif;
 
 
 // media queries
-$sm: 420px;
+$sm: 550px;
 $md: 760px;
 
 
@@ -33,6 +33,11 @@ $md: 760px;
 
 // mixins
 
+//extensions
+%flex-align-center{
+    display: flex;
+    align-items: center;
+}
 
 
 *,*::before, *::after{

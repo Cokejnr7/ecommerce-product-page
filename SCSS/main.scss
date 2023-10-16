@@ -19,6 +19,8 @@
 }
 
 .main{
+
+    
     #{&}__mobile{
         height: 55vh;
         width: 100%;
@@ -63,13 +65,10 @@
 
 
     .product{
-        width: 100%;
-        padding-left: 1.6rem;
-        padding-top: 1.6rem;
+        padding: 1.5rem;
 
         @include sm{
-            padding-left: .8rem;
-            padding-top: .8rem;
+            padding: .8rem;
         }
 
         &__brand{
@@ -80,7 +79,7 @@
             color: $Very-dark-blue;
             display: block;
             max-width: 20rem;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: weight(bold);
         }
 
@@ -88,6 +87,39 @@
             color: $Dark-grayish-blue;
             max-width: 30rem;
         }
+
+        &__new__price{
+            font-weight: weight(bold);
+            font-size: 1.6rem;
+        }
+
+        &__price__discount__container{
+            @extend %flex-align-center;
+           flex-direction: column;
+           align-items: start;
+
+
+           @include md{
+            flex-direction: row;
+            justify-content: space-between;
+           }
+
+        }
+
+        &__new__discount__container{
+            @extend %flex-align-center;
+            gap: 1rem;
+        }
+
+        &__discount{
+            color: $Orange;
+            font-weight: weight(bold);
+            background-color: $Pale-orange;
+            padding: .1rem .5rem;
+            border-radius: .2rem;
+        }
+
+
     }
 
 
