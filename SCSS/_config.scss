@@ -32,6 +32,14 @@ $md: 760px;
 }
 
 // mixins
+@mixin cart-btns($justify,$bg){
+    display: flex;
+    justify-content: $justify;
+    padding: 1rem;
+    border-radius: .6rem;
+    background-color: $bg;
+    font-weight: weight(bold);
+}
 
 //extensions
 %flex-align-center{
@@ -39,13 +47,7 @@ $md: 760px;
     align-items: center;
 }
 
-@mixin cart-btns($justify,$bg){
-    display: flex;
-    justify-content: $justify;
-    padding: 1rem;
-    border-radius: .6rem;
-    background-color: $bg;
-}
+
 
 *,*::before, *::after{
     margin: 0;

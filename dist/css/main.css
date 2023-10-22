@@ -177,7 +177,6 @@ body {
 
 .main .main__mobile {
   height: 55vh;
-  width: 100%;
   position: relative;
 }
 
@@ -256,6 +255,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1.6rem;
 }
 
 @media (min-width: 760px) {
@@ -290,6 +290,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 760px) {
+  .main .product .cart__btns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .main .product .add__subtract {
@@ -302,6 +312,7 @@ body {
   padding: 1rem;
   border-radius: .6rem;
   background-color: #f7f8fd;
+  font-weight: 700;
 }
 
 .main .product .create__cart {
@@ -314,5 +325,6 @@ body {
   padding: 1rem;
   border-radius: .6rem;
   background-color: #ff7d1a;
+  font-weight: 700;
   color: white;
 }
