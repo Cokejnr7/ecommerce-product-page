@@ -33,7 +33,7 @@ body {
 
 @media (min-width: 760px) {
   .container {
-    max-width: 85%;
+    max-width: 75%;
     margin: 0 auto;
   }
 }
@@ -48,7 +48,7 @@ body {
 
 @media (min-width: 760px) {
   .nav {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     border-bottom: 1px solid #b6bcc8;
     margin-bottom: 3.5rem;
   }
@@ -232,14 +232,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2rem;
+    gap: 1.2rem;
   }
 }
 
 .main .main__desktop__image {
   max-width: 100%;
   max-height: 25rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 .main .main__desktop__thumbnails {
@@ -252,8 +252,8 @@ body {
 }
 
 .main .main__desktop__thumbnails .thumbnail {
-  max-width: 20%;
-  max-height: 4rem;
+  max-width: clamp(3.5rem, 6vw, 5rem);
+  max-height: auto;
   border-radius: .5rem;
 }
 
