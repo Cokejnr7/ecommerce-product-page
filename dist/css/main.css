@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-.nav, .nav .nav__logo_hamburber_links, .nav .nav__hamburger_logo_container, .nav .nav__cart_avatar_container, .nav .nav__cart, .main .product__price__discount__container, .main .product__new__discount__container {
+.nav, .nav .nav__logo_hamburber_links, .nav .nav__hamburger_logo_container, .nav .nav__cart_avatar_container, .nav .nav__cart, .main .product__details__price, .main .product__details__price__discount__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +33,7 @@ body {
 
 @media (min-width: 760px) {
   .container {
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
   }
 }
@@ -213,7 +213,7 @@ body {
   }
 }
 
-.main .product {
+.main .product__details {
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,13 +225,13 @@ body {
   gap: 2rem;
 }
 
-.main .product__brand {
+.main .product__details__brand {
   color: #ff7d1a;
   font-size: .8rem;
   letter-spacing: .1rem;
 }
 
-.main .product__heading {
+.main .product__details__heading {
   color: #1d2025;
   display: block;
   max-width: 20rem;
@@ -240,18 +240,19 @@ body {
   margin-top: .5rem;
 }
 
-.main .product__description {
+.main .product__details__description {
   color: #68707d;
-  max-width: 30rem;
+  max-width: 35rem;
   margin-top: 1rem;
 }
 
-.main .product__new__price {
-  font-weight: 700;
-  font-size: 1.6rem;
+@media (min-width: 760px) {
+  .main .product__details__description {
+    max-width: 30rem;
+  }
 }
 
-.main .product__price__discount__container {
+.main .product__details__price {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -259,7 +260,7 @@ body {
 }
 
 @media (min-width: 760px) {
-  .main .product__price__discount__container {
+  .main .product__details__price {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -270,11 +271,12 @@ body {
   }
 }
 
-.main .product__new__discount__container {
-  gap: 1rem;
+.main .product__details__price__new {
+  font-weight: 700;
+  font-size: 1.6rem;
 }
 
-.main .product__discount {
+.main .product__details__price__discount {
   color: #ff7d1a;
   font-weight: 700;
   background-color: #ffede0;
@@ -282,7 +284,11 @@ body {
   border-radius: .2rem;
 }
 
-.main .product .cart__btns {
+.main .product__details__price__discount__container {
+  gap: 1rem;
+}
+
+.main .product__details .cart__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +300,7 @@ body {
 }
 
 @media (min-width: 760px) {
-  .main .product .cart__btns {
+  .main .product__details .cart__btns {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -302,7 +308,7 @@ body {
   }
 }
 
-.main .product .add__subtract {
+.main .product__details .add__subtract {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +321,7 @@ body {
   font-weight: 700;
 }
 
-.main .product .create__cart {
+.main .product__details .create__cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
