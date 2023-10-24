@@ -57,12 +57,12 @@ $md: 760px;
 
 html{
     height: 100%;
+    min-height: 100%;
 }
 
 body{
-    min-height: 100%;
     width: 100vw;
     min-width: 375px;
     font-family: $font-Kumbh;
-    position: relative;
+    min-height: 100%;
 }

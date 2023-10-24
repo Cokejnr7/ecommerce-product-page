@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-.nav, .nav .nav__logo_hamburber_links, .nav .nav__hamburger_logo_container, .nav .nav__cart_avatar_container, .nav .nav__cart, .main .product__details__price, .main .product__details__price__discount__container {
+.nav, .nav .nav__logo_hamburber_links, .nav .nav__hamburger_logo_container, .nav .nav__cart_avatar_container, .nav .nav__cart, .main .product, .main .product__details__price, .main .product__details__price__discount__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,14 +17,14 @@
 
 html {
   height: 100%;
+  min-height: 100%;
 }
 
 body {
-  min-height: 100%;
   width: 100vw;
   min-width: 375px;
   font-family: "Kumbh Sans", sans-serif;
-  position: relative;
+  min-height: 100%;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 
 @media (min-width: 760px) {
   .container {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
   }
 }
@@ -50,6 +50,7 @@ body {
   .nav {
     padding: 2rem 0;
     border-bottom: 1px solid #b6bcc8;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -211,6 +212,49 @@ body {
   .main .main__mobile {
     display: none;
   }
+}
+
+.main .product {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .main__desktop {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .main .main__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.main .main__desktop__image {
+  max-width: 100%;
+  max-height: 25rem;
+  border-radius: 1rem;
+}
+
+.main .main__desktop__thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main__desktop__thumbnails .thumbnail {
+  max-width: 20%;
+  max-height: 4rem;
+  border-radius: .5rem;
 }
 
 .main .product__details {
